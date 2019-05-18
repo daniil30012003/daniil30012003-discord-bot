@@ -2,9 +2,9 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 // other shit idk
 const ownerID = "224298948897144835";
-const prefix = 'd>',
-const gamename = 'DONT @ ME',
-const currentstatus = 'dnd'
+const prefix = 'd>';
+const gamename = 'DONT @ ME';
+const currentstatus = 'dnd';
 
 // commands lol
 client.on('ready', () => {
@@ -29,11 +29,11 @@ client.on('message', (message) => {
 	if (message.author.id !== ownerID) return;
 		if (command === 'ban') {
 			let member = message.mentions.members.first();
-			let reason = args.slice(1).join('\');
+			let reason = args.slice(1).join('\\');
 			member.ban(reason);
 		} else
 		if (command === 'send') {
-			let text = args.join('\');
+			let text = args.join('\\');
 			message.delete();
 			message.channel.send(text);
 		}
