@@ -3,13 +3,11 @@ const client = new Discord.Client();
 // other shit idk
 const ownerID = "224298948897144835";
 const prefix = 'd>';
-const gamename = 'DONT @ ME';
-const currentstatus = 'dnd';
 
 // commands lol
 client.on('ready', () => {
 	client.user.setStatus('online');
-	client.user.setPresence({ game: { name: gamename }, status: currentstatus });
+	client.user.setPresence({ game: { name: 'DON\'T @ ME' }, status: 'online' });
 	console.log('H');
 });
  
