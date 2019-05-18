@@ -6,8 +6,8 @@ const prefix = 'd>';
 
 // commands lol
 client.on('ready', () => {
-	client.user.setStatus('online');
-	client.user.setPresence({ status: 'online', game: { name: 'DON\'T @ ME' }});
+	\\ client.user.setActivity('discord.js', { type: 'WATCHING' })
+	client.user.setPresence({ activity: { name: 'DON\'T @ ME' },  status: 'online' });
 	console.log('H');
 });
  
@@ -19,7 +19,7 @@ client.on('message', (message) => {
 	if (command === 'b') {
 		message.channel.send('b');
 	} else
-	if (message.content.includes(message.mentions.client)) {
+	if (message.isMentioned(client.user)) {
 		message.channel.reply('FUCJ OFF'); 
 		message.delete(3000);
 	} else
