@@ -27,15 +27,16 @@ client.on('message', (message) => {
 	} else
 	// admin commands maybe
 	if (message.author.id !== ownerID) return;
-	if (command === 'ban') {
-		let member = message.mentions.members.first();
-		let reason = args.slice(1).join('\');
-		member.ban(reason);
-	} else
-	if (command === 'send') {
-		let text = args.join('\');
-		message.delete();
-		message.channel.send(text);
+		if (command === 'ban') {
+			let member = message.mentions.members.first();
+			let reason = args.slice(1).join('\');
+			member.ban(reason);
+		} else
+		if (command === 'send') {
+			let text = args.join('\');
+			message.delete();
+			message.channel.send(text);
+		}
 	}
 });
  
