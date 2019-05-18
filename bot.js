@@ -6,8 +6,9 @@ const prefix = 'd>';
 
 // commands lol
 client.on('ready', () => {
+	client.user.setStatus('online')
 	\\ client.user.setActivity('discord.js', { type: 'WATCHING' })
-	client.user.setPresence({ activity: { name: 'DON\'T @ ME' },  status: 'online' });
+	\\ client.user.setPresence({ activity: { name: 'DON\'T @ ME' },  status: 'online' });
 	console.log('H');
 });
  
