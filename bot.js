@@ -7,14 +7,14 @@ const prefix = 'd>';
 // commands lol
 client.on('ready', () => {
 	client.user.setStatus('online');
-	client.user.setPresence({ game: { name: 'DON\'T @ ME' }, status: 'online' });
+	client.user.setPresence({ status: 'online', game: { name: 'DON\'T @ ME' }});
 	console.log('H');
 });
  
 client.on('message', (message) => {
 	if (message.author.bot) return;
 	if (message.content.indexOf(prefix) !== 0) return;
-	const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+	const args = message.content.slice(prefix.length).trim().split(/ +/g);
 	const command = args.shift().toLowerCase();
 	if (command === 'b') {
 		message.channel.send('b');
