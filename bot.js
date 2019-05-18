@@ -3,7 +3,7 @@ const client = new Discord.Client();
  
 client.on('ready', () => {
 	client.user.setStatus('online');
-	client.user.setActivity('DONT\'T @ ME', { type: 'PLAYING' })
+	client.user.setPresence({ game: { name: 'DONT @ ME' }, status: 'dnd' });
 	console.log('H');
 });
  
