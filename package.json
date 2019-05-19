@@ -4,10 +4,10 @@
 	"version": "V-0.0.5",
 	"main": "index.lua",
 	"scripts": {
-		"start": "index.lua"
-	}
+		"start": "node r.js"
+	},
 	"dependencies": {
-		"discordia": "2.15.0",
-		"request": "0.0.0"
+		"discord.js": "11.1.0",
+		"request": "2.81.0"
 	}
 }
