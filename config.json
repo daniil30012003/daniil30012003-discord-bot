@@ -1,0 +1,13 @@
+{
+	"ownerID": "224298948897144835";
+	"adminID": [
+		"430715358773772298",
+		"398539220290895874"
+	];
+	"botstatus": "online"; // "online", "idle", "dnd", "offline".
+	"gamestatus": "DON'T @ ME";
+	"prefix": "d>";
+	"adminprefix": "d>>";
+	"argumentsplit": "\";
+	"requirecondition": "ADMINISTRATOR"; // Required permission for the bot to work.
+}
