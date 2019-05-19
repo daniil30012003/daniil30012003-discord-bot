@@ -1,0 +1,13 @@
+{
+	"name": "daniil30012003-discord-bot-lua",
+	"description": "daniil30012003-discord-bot-lua",
+	"version": "V-0.0.5",
+	"main": "index.lua",
+	"scripts": {
+		"start": "index.lua"
+	}
+	"dependencies": {
+		"discordia": "2.15.0",
+		"request": "0.0.0"
+	}
+}
