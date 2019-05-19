@@ -8,3 +8,4 @@ gamestatus = "d>help"
 prefix = "d>"
 adminprefix = "d>>"
 argumentsplit = "\"
+reqperm = "ADMINISTRATOR" -- Required permission for the bot to work.
