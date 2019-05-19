@@ -2,8 +2,8 @@
 local discordia = require('discordia')
 local client = discordia.Client()
 --[[ MODULES ]]--
-local config = require('./config.lua')
-local restrict = require('./restrictions.lua')
+local config = require('./config')
+local restrict = require('./restrictions')
 
 --[[ CLIENT ]]--
 client:on('ready', function()
