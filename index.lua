@@ -12,17 +12,20 @@ client:on('ready', function()
 end)
 
 client:on('messageCreate', function(message)
-	if message.author.bot then return else
-	if message.author.id == restrict.bannedUser then
-		message.channel:send('**You are banned from using this bot.**')
+	local message.author = msgauthor
+	local message.content = msgcontent
+	local message.channel = msgch
+	if msgauthor.bot then return else
+	if msgauthor.id == restrict.bannedUser then
+		msgch:send('**You are banned from using this bot.**')
 	elseif message.guild.id == restrict.bannedGuild then
-		message.channel:send('**Guild **`'..message.guild.name..'`** is banned from using this bot.**')
+		msgch:send('**Guild **`'..message.guild.name..'`** is banned from using this bot.**')
 	else
 		if not config.reqperm then 
-			if message.content == config.prefix then 
-				message.channel:send('**This bot requires **'..config.reqperm..'** permission to work for this server.**') 
-			elseif message.content == config.prefix..'b' then
-				message.channel:send('b')
+			if msgcontent == config.prefix then 
+				msgch:send('**This bot requires **'..config.reqperm..'** permission to work for this server.**') 
+			elseif msgcontent == config.prefix..'b' then
+				msgch:send('b')
 			end
 		end
 	end
