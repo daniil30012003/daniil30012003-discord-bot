@@ -1,1 +1,1 @@
-worker: luvit index.lua
+worker: node r.js
