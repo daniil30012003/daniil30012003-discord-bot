@@ -17,7 +17,7 @@ client.on('ready', () => {
 // COMMAND //
 client.on('message', (message) => {
 	if (message.isMentioned(client.user)) {
-		message.reply(vars.msgreply[Math.floor(Math.random() * fortunes.length).then(message => {
+		message.reply(vars.msgreply[Math.floor(Math.random() * fortunes.length)]).then(message => {
 			message.delete(3000)
 		})
 	}
