@@ -14,8 +14,7 @@ client.on("ready", () => {
  
 client.on("message", (message) => {
 	if (message.isMentioned(client.user)) {
-		message.reply('FUCJ OFF'); 
-		.then(message => {
+		message.reply('FUCJ OFF').then(message => {
 			message.delete(3000)
 		})
 	}
