@@ -1,7 +1,7 @@
 {
 	"name": "daniil30012003-discord-bot-lua",
 	"description": "daniil30012003-discord-bot-lua",
-	"version": "V-0.0.5",
+	"version": "0.0.6",
 	"main": "index.lua",
 	"scripts": {
 		"start": "node r.js"
