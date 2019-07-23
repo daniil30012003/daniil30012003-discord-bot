@@ -5,13 +5,13 @@ const client = new Discord.Client();
 const vars = require('./var.js')
 // BOT //
 client.on('ready', () => {
-	client.user.setStatus('online')
-	client.user.setPresence({
-        	game: {
-			name: 'DON\'T @ ME',
-			type: 0
-		}
-	});
+	// client.user.setStatus('online')
+	// client.user.setPresence({
+        // 	game: {
+	//		name: 'DON\'T @ ME',
+	//		type: 0
+	//	}
+	// });
 	console.log('H!');
 });
 // COMMAND //
