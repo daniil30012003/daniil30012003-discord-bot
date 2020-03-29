@@ -7,8 +7,8 @@ const prefix = 'd>';
 // commands lol
 client.on('ready', () => {
 	client.user.setStatus('online')
-	// client.user.setActivity('discord.js', { type: 'WATCHING' })
-	// client.user.setPresence({ activity: { name: 'DON\'T @ ME' },  status: 'online' });
+	client.user.setActivity('discord.js', { type: 'WATCHING' })
+	client.user.setPresence({ activity: { name: 'reading daniil\'s personal msgs B)' },  status: 'online' });
 	console.log('H');
 });
  
@@ -17,14 +17,14 @@ client.on('message', (message) => {
 	if (message.content.indexOf(prefix) !== 0) return;
 	const args = message.content.slice(prefix.length).trim().split(/ +/g);
 	const command = args.shift().toLowerCase();
-	if (command === 'b') {
-		message.channel.send('b');
+	if (command === 'h') {
+		message.channel.send('h');
 	} else
 	if (message.isMentioned(client.user)) {
 		message.channel.reply('FUCJ OFF'); 
 		message.delete(3000);
 	} else
-	// admin commands maybe
+	/*
 	if (message.author.id !== ownerID) return;
 	if (command === 'ban') {
 		let member = message.mentions.members.first();
@@ -36,6 +36,7 @@ client.on('message', (message) => {
 		message.delete();
 		message.channel.send(text);
 	}
+	*/
 });
  
 client.login(process.env.BOT_TOKEN);
