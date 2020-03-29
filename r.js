@@ -17,7 +17,7 @@ client.on('ready', () => {
 // COMMAND //
 client.on('message', (message) => {
 	if (message.isMentioned(client.user)) {
-		message.reply("HOW DARE YOU TO PING ME YOU LITTLE MOTHER FUCKER, I WILL FIND YOU AND WRECK YOUR FUCKING STUPID COMPUTER TO PREVENT FURTHER BOT PINGS, YOU'LL REGRET WHAT YOU HAVE DONE SO FAR KIDDO.").then(message => {
+		message.reply("no").then(message => {
 			message.delete(3000)
 		})
 	}
